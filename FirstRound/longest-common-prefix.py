@@ -8,7 +8,7 @@ class Solution:
         如果相等，依次循环遍历，直到退出，但是要判断是否是最后一位以及最后如何返回公共前缀
         正确思路待补充：
         """
-        
+
 
 if __name__ == '__main__':
     list1 = ["flower", "flow", "flight"]
