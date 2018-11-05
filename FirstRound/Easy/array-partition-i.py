@@ -10,6 +10,9 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
+        """
+        为什么这里最大子序和就是偶数位数字呢？
+        """
         nums.sort()
         nums_len = len(nums)
         res = 0
