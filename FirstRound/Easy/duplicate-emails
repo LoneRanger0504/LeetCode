@@ -1,0 +1,6 @@
+"""
+WHERE 关键字无法与聚合函数一起使用，因此需要使用group by语句来实现统计筛选
+用法: select xxx from table group by columns having func()
+"""
+SELECT email FROM Person
+GROUP BY email HAVING COUNT(email) > 1
