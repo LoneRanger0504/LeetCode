@@ -31,6 +31,9 @@ class Solution:
         #     fast = fast.next.next
         #     slow = slow.next
         # return slow
+        """
+        test
+        """
         dummy = ListNode(0)
         dummy.next = head
         fast = slow = dummy
