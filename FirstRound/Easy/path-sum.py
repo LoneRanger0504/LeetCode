@@ -39,7 +39,7 @@ if __name__ == '__main__':
     root.left.left.right = TreeNode(2)
     root.right.left = TreeNode(13)
     root.right.right = TreeNode(4)
-    root.right.right.right = (1)
+    root.right.right.right = TreeNode(1)
     solution = Solution()
     res = solution.hasPathSum(root, 22)
     print(res)
