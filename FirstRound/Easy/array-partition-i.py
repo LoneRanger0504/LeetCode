@@ -13,16 +13,14 @@ class Solution:
         为什么这里最大子序和就是偶数位数字呢？？？
         """
         nums.sort()
-        nums_len = len(nums)
         res = 0
-        for i in range(nums_len):
-            if i % 2 == 0:
-                res += nums[i]
+        for num in nums[::2]:
+            res += num
         return res
 
 
 if __name__ == '__main__':
-    input_arr = [1, 1]
+    input_arr = [1, 2, 4, 3]
     solution = Solution()
     result = solution.arrayPairSum(input_arr)
     print(result)

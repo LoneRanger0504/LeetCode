@@ -15,8 +15,8 @@ class Solution:
         """
         while num >= 10:
             remainder = num % 10
-            quotient = (num - remainder) / 10
-            num = remainder + int(quotient)
+            quotient = (num - remainder) // 10
+            num = remainder + quotient
         return num
 
 
