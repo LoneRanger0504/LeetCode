@@ -12,10 +12,20 @@ class Solution(object):
         """
         统计1的个数
         """
-        return bin(n)[2:].count('1')
+        # (1)内置函数
+        # return bin(n)[2:].count('1')
+        # (2)常规解法
 
+        count = 0
+        if n < 0:
+            n = n & 0xffffffff
+        while n != 0:
+            count += 1
+            n = (n - 1) & n
+        return count
 
 if __name__ == '__main__':
-    input_n = 5
+    input_n = -5
     solution = Solution()
     res = solution.hammingWeight(input_n)
+    print(res)
